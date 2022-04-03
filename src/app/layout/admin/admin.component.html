@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+     <meta charset="UTF-8">
+     <meta http-equiv="X-UA-Compatible" content="IE=edge">
+     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+     <title>Admin</title>
+</head>
+<body>
+     <div class="app">
+          <!-- phần header -->
+          
+          <app-header></app-header>
+
+          <!-- phần main -->
+          <div class="container-fluid">
+               <main>
+                    <div class="row">
+                         <div class="col-2">
+                             
+                              <app-aside></app-aside>
+                         </div>
+                         <div class="col-10 p-5">
+                              <router-outlet></router-outlet>                           
+                         </div>
+                    </div>
+               </main>
+          </div>
+
+          <!-- phần footer -->
+          <div class="container-fluid">
+               <div class="row">
+                    <app-footer></app-footer>
+               </div>
+          </div>
+     </div>
+</body>
+</html>

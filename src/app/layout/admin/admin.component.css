@@ -1,0 +1,46 @@
+* {
+     margin: 0;
+     padding: 0;
+     box-sizing: border-box;
+}
+/* css header */
+header {
+     background-color: #000;
+     color: #fff;
+     height: 150px;
+     padding-left: 20px;
+     line-height: 150px;
+}
+
+header a {
+     color: #fff;
+     text-decoration: none;
+     font-size: 20px;
+}
+
+.avatar {
+     width: 40px;
+     height: 40px;
+     border-radius: 50%;
+     margin-right: 10px;
+}
+/* end css header */
+
+/* css main */
+main {
+     
+     /* padding-left: 20px; */
+     height: 1000px;
+     border-top: 1px solid #fff;
+}
+
+
+
+/* css footer */
+footer {
+     background-color: #000;
+     color: #fff;
+     text-align: center;
+     height: 100px;
+     line-height: 100px;
+}

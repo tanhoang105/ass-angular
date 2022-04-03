@@ -1,0 +1,6 @@
+if (self.CavalryLogger) { CavalryLogger.start_js_script(document.currentScript); }
+
+__d("StandardsInCommentsCommunityStandardsLinkTappedFalcoEvent",["FalcoLoggerInternal","getFalcoLogPolicy_DO_NOT_USE"],(function(a,b,c,d,e,f){"use strict";a=b("getFalcoLogPolicy_DO_NOT_USE")("126");c=b("FalcoLoggerInternal").create("standards_in_comments_community_standards_link_tapped",a);e.exports=c}),null);
+__d("StandardsInCommentsImpressionFalcoEvent",["FalcoLoggerInternal","getFalcoLogPolicy_DO_NOT_USE"],(function(a,b,c,d,e,f){"use strict";a=b("getFalcoLogPolicy_DO_NOT_USE")("127");c=b("FalcoLoggerInternal").create("standards_in_comments_impression",a);e.exports=c}),null);
+__d("CometMarketplaceYouShippingOffersContentContainerQuery_facebookRelayOperation",[],(function(a,b,c,d,e,f){e.exports="3544439092322974"}),null);
+__d("LiveProducerCrosspostNewDialogQuery_facebookRelayOperation",[],(function(a,b,c,d,e,f){e.exports="4228774313843310"}),null);

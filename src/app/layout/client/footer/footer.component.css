@@ -1,0 +1,25 @@
+*{
+     margin: 0;
+     padding: 0;
+     box-sizing: border-box;
+}
+footer {
+     margin-top: -70px;
+     background-color: rgb(15, 14, 14);
+     height: 200px;
+}
+.email {
+     padding-left: 10px;
+     background-color: #000;
+     color: #fff;
+     outline: none;
+     border: none;
+     border-bottom: 1px solid #ccc;
+     box-shadow: 10px 10px 5px rgb(240, 240, 243);
+     
+}
+
+.text-desc {
+     margin-bottom: 500px;
+     font-size: 30px;
+}

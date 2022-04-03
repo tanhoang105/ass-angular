@@ -1,0 +1,3 @@
+if (self.CavalryLogger) { CavalryLogger.start_js_script(document.currentScript); }
+
+__d("CometVideoHomeLanceletHostedRoot.entrypoint",["CometSinglePageChannelTabRoot.entrypoint","JSResourceForInteraction"],(function(a,b,c,d,e,f,g){"use strict";a={getPreloadProps:function(a){return{entryPoints:{pageEntryPoint:{entryPoint:b("CometSinglePageChannelTabRoot.entrypoint"),entryPointParams:a}},extraProps:a}},root:c("JSResourceForInteraction")("CometVideoHomeLanceletHostedRoot.react").__setRef("CometVideoHomeLanceletHostedRoot.entrypoint")};g["default"]=a}),98);

@@ -1,0 +1,81 @@
+* {
+     margin: 0;
+     padding: 0;
+     box-sizing: border-box;
+}
+main {
+     height: 100%;
+}
+.main-item {
+     height: 600px;   
+}
+.main-item-2 {
+
+}
+.title{
+     margin-bottom: 50px;
+}
+
+.group-item {
+     margin-bottom: 20px;
+}
+.group-item img {
+     border-radius: 5px;
+}
+
+.main-item-3 {
+     background-image: url(https://png.pngtree.com/thumb_back/fw800/back_our/20190621/ourmid/pngtree-men-s-luxury-watch-black-banner-image_182858.jpg) ;
+     background-repeat: no-repeat;
+     background-size: cover;
+}
+
+.info-products {
+     color: #fff;
+}
+ .main-item-4 {
+     height: 100%;
+}
+
+
+.avatar {
+     height: 100px;
+     width: 100px;
+     border-radius: 100%;
+     border: 3px dotted #000;
+     font-weight: 800;
+     margin-left: 44%;
+     margin-bottom: 20px;
+     background-image: url(https://scontent.fhan3-2.fna.fbcdn.net/v/t1.15752-9/274910492_384553540167488_8769713237981343269_n.jpg?_nc_cat=108&_nc_map=test-rt&ccb=1-5&_nc_sid=ae9488&_nc_ohc=Uh5n3NdEyXYAX-aLTvB&_nc_ht=scontent.fhan3-2.fna&oh=03_AVK9V8dCAt4gXvWeLfnTtLaXU0OUsWFY1HASQqmCx6ZeGQ&oe=626CE643);
+     background-repeat: no-repeat;
+     background-size: cover;
+}
+
+.name {
+     font-size: 30px;
+     font-weight: 700;
+     vertical-align: middle;
+}
+.main-item-5 {
+     background-color: cadetblue;
+}
+.main-item-6 {
+     background-color: aquamarine;
+     height: 100%;
+}
+
+.main-item-7  {
+     background-image: url(https://png.pngtree.com/thumb_back/fw800/back_our/20190621/ourmid/pngtree-atmospheric-black-watch-promotion-banner-image_179454.jpg);
+     background-repeat: no-repeat;
+     background-size: cover;
+}
+
+.input-submit {
+     background-color: yellow;
+     color: black;
+     border: none;
+     outline: none;
+     height: 28px;
+     width: 100px;
+     border-radius: 5px;
+
+}
