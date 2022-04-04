@@ -79,3 +79,16 @@ main {
      border-radius: 5px;
 
 }
+.email {
+     padding-left: 10px;
+     background-color: #000;
+     color: #fff;
+     outline: none;
+     border: none;
+     border-bottom: 1px solid #ccc;
+     box-shadow: 10px 10px 5px rgb(240, 240, 243);
+     
+}
+ .btn-danger {
+     margin-top: 30px;
+}

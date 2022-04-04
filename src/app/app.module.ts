@@ -1,5 +1,6 @@
 import { NgModule } from '@angular/core';
 import { BrowserModule } from '@angular/platform-browser';
+import { HttpClientModule} from '@angular/common/http';
 
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
@@ -13,7 +14,13 @@ import { FooterComponent } from './layout/admin/footer/footer.component';
 import { MainComponent } from './layout/admin/main/main.component';
 import { FormEditComponent } from './layout/admin/main/form-edit/form-edit.component';
 import { FormAddComponent } from './layout/admin/main/form-add/form-add.component';
-import { SlideComponent } from './layout/client/slide/slide.component';
+import { ClientHeaderComponent } from './layout/client/client-header/client-header.component';
+import { ClientMainComponent } from './layout/client/client-main/client-main.component';
+import { ClientFooterComponent } from './layout/client/client-footer/client-footer.component';
+import { ClientSlideComponent } from './layout/client/client-slide/client-slide.component';
+import { ProductService } from './service/product.service';
+import { SlideService } from './service/slide.service';
+import { ClientContactComponent } from './layout/client/client-contact/client-contact.component';
 
 @NgModule({
   declarations: [
@@ -27,16 +34,21 @@ import { SlideComponent } from './layout/client/slide/slide.component';
     MainComponent,
     FormEditComponent,
     FormAddComponent,
-    SlideComponent,
+    ClientHeaderComponent,
+    ClientMainComponent,
+    ClientFooterComponent,
+    ClientSlideComponent,
+    ClientContactComponent,
     
     
   ],
   imports: [
     BrowserModule,
     AppRoutingModule,
-    NgbModule
+    NgbModule,
+    HttpClientModule,
   ],
-  providers: [],
+  providers: [ProductService , SlideService],
   bootstrap: [AppComponent]
 })
 export class AppModule { }

@@ -2,11 +2,11 @@ import { Component, OnInit } from '@angular/core';
 import { ProductService } from 'src/app/service/product.service';
 
 @Component({
-  selector: 'app-main',
-  templateUrl: './main.component.html',
-  styleUrls: ['./main.component.css']
+  selector: 'app-client-main',
+  templateUrl: './client-main.component.html',
+  styleUrls: ['./client-main.component.css']
 })
-export class MainComponent implements OnInit {
+export class ClientMainComponent implements OnInit {
   products : any;
   constructor( private ps: ProductService) { }
 
@@ -16,9 +16,8 @@ export class MainComponent implements OnInit {
 
   getList(){
     this.ps.getProducts().subscribe(data => {
-      this.products = data ;
+      this.products = data;
       console.log(this.products);
     })
   }
-
 }

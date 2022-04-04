@@ -4,13 +4,19 @@ import { AdminComponent } from './layout/admin/admin.component';
 import { FormAddComponent } from './layout/admin/main/form-add/form-add.component';
 import { FormEditComponent } from './layout/admin/main/form-edit/form-edit.component';
 import { MainComponent } from './layout/admin/main/main.component';
+import { ClientContactComponent } from './layout/client/client-contact/client-contact.component';
 import { DetailProductComponent } from './layout/client/detail-product/detail-product.component';
 import { HomePageComponent } from './layout/client/home-page/home-page.component';
 
 const routes: Routes = [
     {
       path : '',
-      component : HomePageComponent,       
+      component : HomePageComponent,  
+          
+    },
+    {
+      path : 'contact',
+      component : ClientContactComponent
     },
     {
       path : 'admin',
@@ -27,11 +33,12 @@ const routes: Routes = [
         {
           path : 'add',
           component : FormAddComponent
-        }
+        }, 
+        
       ]
     },
     {
-      path : 'product',
+      path : 'detail',
       component : DetailProductComponent,
     }
      

@@ -4,7 +4,9 @@
 
      </div>
      <div class="col-1">
-          <button class="btn-success">Thêm</button>
+          <button class="btn-success">
+            <a style="text-decoration: none; font-weight: 600; color: #fff;" routerLink="add">Thêm</a>
+          </button>
      </div>
 </div>
 <table class="table" >
@@ -20,14 +22,16 @@
        </tr>
      </thead>
      <tbody>
-       <tr>
-         <th scope="row">1</th>
-         <td><img width="100px" src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcS5HHDLeMvOkGW1Y6ACwzNhwDibDMoeAoBtyg&usqp=CAU" alt=""></td>
-         <td>Đông hồ nhật tân</td>
-         <td>@12M</td>
-         <td>Còn hàng</td>
+       <tr *ngFor="let p of products">
+         <th scope="row">{{p.id}}</th>
+         <td><img width="100px" [src]="p.avatar" alt=""></td>
+         <td>{{p.name}}</td>
+         <td>{{p.price}}</td>
+         <td>{{p.status}}</td>
          <td><button class="btn btn-danger">Xóa</button></td>
-         <td><button class="btn btn-warning">Chỉnh</button></td>
+         <td><button class="btn btn-warning">
+           <a style="text-decoration: none; color: #000; font-weight: 600;" routerLink="edit">Chỉnh</a>
+          </button></td>
        </tr>
        
      </tbody>
