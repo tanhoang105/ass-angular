@@ -12,7 +12,6 @@ import { AsideComponent } from './layout/admin/silder-bar/aside/aside.component'
 import { HeaderComponent } from './layout/admin/header/header.component';
 import { FooterComponent } from './layout/admin/footer/footer.component';
 import { MainComponent } from './layout/admin/main/main.component';
-import { FormEditComponent } from './layout/admin/main/form-edit/form-edit.component';
 import { FormAddComponent } from './layout/admin/main/form-add/form-add.component';
 import { ClientHeaderComponent } from './layout/client/client-header/client-header.component';
 import { ClientMainComponent } from './layout/client/client-main/client-main.component';
@@ -21,6 +20,18 @@ import { ClientSlideComponent } from './layout/client/client-slide/client-slide.
 import { ProductService } from './service/product.service';
 import { SlideService } from './service/slide.service';
 import { ClientContactComponent } from './layout/client/client-contact/client-contact.component';
+import { FormsModule, ReactiveFormsModule } from '@angular/forms';
+import { SearchComponent } from './layout/client/search/search.component';
+import { ProductsComponent } from './layout/client/products/products.component';
+import { AdminSliceComponent } from './layout/admin/main/admin-slice/admin-slice.component';
+import { AdminProductSpecicalComponent } from './layout/admin/main/admin-product-specical/admin-product-specical.component';
+import { ProductSpecicalComponent } from './layout/client/products/product-specical/product-specical.component';
+import { ProductsDefaultComponent } from './layout/client/products/products-default/products-default.component';
+import { ProductSpecicalService } from './service/product-specical.service';
+import { ShowValidateComponent } from './layout/admin/component/show-validate/show-validate.component';
+import { StatusComponent } from './layout/admin/component/status/status.component';
+import { ProductsSimilarComponent } from './layout/client/products/products-similar/products-similar.component';
+import { ProductSimilarService } from './service/product-similar.service';
 
 @NgModule({
   declarations: [
@@ -32,13 +43,21 @@ import { ClientContactComponent } from './layout/client/client-contact/client-co
     HeaderComponent,
     FooterComponent,
     MainComponent,
-    FormEditComponent,
     FormAddComponent,
     ClientHeaderComponent,
     ClientMainComponent,
     ClientFooterComponent,
     ClientSlideComponent,
     ClientContactComponent,
+    SearchComponent,
+    ProductsComponent,
+    AdminSliceComponent,
+    AdminProductSpecicalComponent,
+    ProductSpecicalComponent,
+    ProductsDefaultComponent,
+    ShowValidateComponent,
+    ProductsSimilarComponent,
+    StatusComponent
     
     
   ],
@@ -46,9 +65,11 @@ import { ClientContactComponent } from './layout/client/client-contact/client-co
     BrowserModule,
     AppRoutingModule,
     NgbModule,
+    FormsModule,
     HttpClientModule,
+    ReactiveFormsModule
   ],
-  providers: [ProductService , SlideService],
+  providers: [ProductService , SlideService , ProductSpecicalService,ProductSimilarService],
   bootstrap: [AppComponent]
 })
 export class AppModule { }

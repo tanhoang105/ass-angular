@@ -30,7 +30,7 @@ export class SlideService {
 
   }
   
-  deleteProduct(id:number|string){
+  deleteSlice(id:number|string){
     return this.http.delete(`${ApiUrl}/${id}`);
   }
 }

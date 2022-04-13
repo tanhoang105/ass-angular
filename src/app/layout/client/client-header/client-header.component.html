@@ -8,8 +8,11 @@
                  </div>
                  <div class="col-5" style="margin-top: 14px;">
                       <div class="search">
-                           <input  width="100%" type="search" name="" id="">
-                           <button class="btn btn-sucess search-btn">Tìm</button>
+                         <form  [formGroup]="formInput">
+                              <div style="display: none;"><app-search [formField]="formInput" (resultSearch)="result()" ></app-search></div>
+                              <input  width="100%" type="search" name="search" id=""  formControlName="ProductValueSearch" >
+                              <button type="submit" class="btn btn-sucess search-btn" (click)="submit(formInput.value)">Tìm</button>
+                         </form>
                       </div>
                  </div>
                  <div class="col-6 ">

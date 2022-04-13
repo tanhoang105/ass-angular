@@ -1,0 +1,62 @@
+*{
+     margin: 0;
+     padding: 0;
+     box-sizing: border-box;
+
+}
+.group-prodcut{
+     height: 100%;
+     margin-bottom: 50px;
+}
+.cate-product {
+     margin-top: 98px;
+}
+
+.cate-product li a {
+     text-decoration: none;
+     color: black;
+}
+
+
+
+
+/*  */
+
+.main-item-7  {
+     background-image: url(https://png.pngtree.com/thumb_back/fw800/back_our/20190621/ourmid/pngtree-atmospheric-black-watch-promotion-banner-image_179454.jpg);
+     background-repeat: no-repeat;
+     background-size: cover;
+     margin-top: 30px;
+}
+
+.input-submit {
+     background-color: yellow;
+     color: black;
+     border: none;
+     outline: none;
+     height: 28px;
+     width: 100px;
+     border-radius: 5px;
+
+}
+
+
+/* csss footer */
+.form-contact {
+     margin-bottom: 70px;
+}
+.email {
+     padding-left: 10px;
+     background-color: #000;
+     color: #fff;
+     outline: none;
+     border: none;
+     border-bottom: 1px solid #ccc;
+     box-shadow: 10px 10px 5px rgb(240, 240, 243);
+     
+}
+
+.text-desc {
+     margin-bottom: 500px;
+     font-size: 30px;
+}

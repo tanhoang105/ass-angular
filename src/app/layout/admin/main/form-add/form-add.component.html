@@ -1,20 +1,43 @@
 
-<h2  style="margin-bottom: 20px;">Thêm mới sản phẩm</h2>
-<div class="mb-3">
-     <label for="" class="form-label">Tên sản phẩm</label>
-     <input type="text" class="form-control" id="" >
-</div>
-<div class="mb-3">
-     <label for="" class="form-label">Ảnh</label>
-     <input type="file" class="form-control" id="" placeholder="Another input placeholder">
-</div>
-<div class="mb-3">
-     <label for="" class="form-label">Giá sản phẩm</label>
-     <input type="text" class="form-control" id="" >
-</div>
-<div class="mb-3">
-     <label for="" class="form-label">Trạng thái:</label><br>
-     <input type="radio" name="status" id="">     Còn hàng
-     <input type="radio" name="status" id="">     Hết hàng
-</div>
-<button class="btn btn-success">Thêm</button>
+<h2 *ngIf="id === undefined" style="margin-bottom: 20px;">Thêm mới sản phẩm</h2>
+<h2 *ngIf="id" style="margin-bottom: 20px;">Cập nhập sản phẩm</h2>
+
+<form  [formGroup]="formInput"  enctype="multipart/form-data">
+     <div class="mb-3">
+          <label for="" class="form-label">Tên sản phẩm</label>
+          <input type="text" class="form-control" id="" formControlName="name">
+          <app-show-validate
+          [formField]="formInput.get('name')"
+          key="Tên sản phẩm"
+        ></app-show-validate>
+     </div>
+     <div class="mb-3">
+          <label for="" class="form-label">Mô tả sản phẩm</label>
+          <input type="text" class="form-control" id="" formControlName="desc">
+          <app-show-validate
+          [formField]="formInput.get('desc')"
+          key="Mô tả sản phẩm"
+        ></app-show-validate>
+     </div>
+     <div class="mb-3">
+          <label  class="form-label">Ảnh</label><br>
+          <img *ngIf="id && imageBase64 === undefined" [src]="productDetail.avatar" alt="" width="200px" height="200px">
+          <img [src]="imageBase64" alt="" width="200"><br>
+          <input type="file" class="form-control" id="" formControlName="avatar" (change)="change($event)" >
+     </div>
+     <div class="mb-3">
+          <label for="" class="form-label">Giá sản phẩm</label >
+          <input type="number" class="form-control" id="" formControlName="price">
+          <app-show-validate
+          [formField]="formInput.get('price')"
+          key="Giá sản phẩm"
+        ></app-show-validate>
+     </div>
+     <!-- <div class="mb-3">
+          <label for="" class="form-label" >Trạng thái sản phẩm</label><br>       
+          <input type="radio" name="status" id="" value="0" formControlName="status" [ngClass]="productDetail.status == 0 ? 'checked' : '' ">     Đang bán
+          <input type="radio" name="status" id="" value="1" formControlName="status" [ngClass]="productDetail.status == 1 ? 'checked' : '' ">     Không bán
+     </div> -->
+     
+     <button class="btn btn-success"  (click)="onSubmit(formInput.value)">Submit</button>
+</form>

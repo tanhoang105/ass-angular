@@ -1,20 +1,20 @@
 import { ComponentFixture, TestBed } from '@angular/core/testing';
 
-import { FormEditComponent } from './form-edit.component';
+import { ProductsSimilarComponent } from './products-similar.component';
 
-describe('FormEditComponent', () => {
-  let component: FormEditComponent;
-  let fixture: ComponentFixture<FormEditComponent>;
+describe('ProductsSimilarComponent', () => {
+  let component: ProductsSimilarComponent;
+  let fixture: ComponentFixture<ProductsSimilarComponent>;
 
   beforeEach(async () => {
     await TestBed.configureTestingModule({
-      declarations: [ FormEditComponent ]
+      declarations: [ ProductsSimilarComponent ]
     })
     .compileComponents();
   });
 
   beforeEach(() => {
-    fixture = TestBed.createComponent(FormEditComponent);
+    fixture = TestBed.createComponent(ProductsSimilarComponent);
     component = fixture.componentInstance;
     fixture.detectChanges();
   });

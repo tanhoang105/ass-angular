@@ -1,0 +1,49 @@
+
+<div class="container p-0 py-5 group-prodcut">
+    <div class="row">
+     <div class="col-3">
+          <ul class="list-group cate-product">
+               <li class="list-group-item " aria-current="true" style="background-color: black; color: #fff;">Danh mục sản phẩm</li>
+               <li class="list-group-item"><a routerLink="/product">Đồng Hồ H&M</a></li>
+               <li class="list-group-item"><a routerLink="product-specical">Đồng Hồ Đặc Biệt</a></li>
+               <li class="list-group-item"><a routerLink="product-similar">Đồng Hồ Rolex</a></li>
+               
+          </ul>
+     </div>
+     <div class="col-9">
+          <div class="row group-item">
+                <h1 class="title" style=" margin-bottom: 50px; text-align: center; color: red; font-family: 'Courier New', Courier, monospace; font-weight: 600;">Sẩn phẩm của chúng tôi</h1>   
+                     <!-- <div class="col-4" *ngFor="let p of products" style="margin-bottom: 20px;">
+                          <a [routerLink]="['',p.id,'detail']">
+                               <img width="276px" height="182px" [src]="p.avatar" alt="">
+                          </a>
+                     </div> -->
+                     <router-outlet></router-outlet>
+                     
+                
+          </div>                     
+     </div>    
+    </div>
+</div>
+<div class="container-fluid p-0 form-contact ">
+ <div class="main-item main-item-7 py-5" >
+      <div class="container">                                                                 
+           <div class="row">
+                <div class="col-6">
+                     <h2 style="font-family: 'Courier New', Courier, monospace; font-weight: 800;">Tư vấn mua hàng</h2>
+                     <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Tempora illum porro commodi! Qui praesentium architecto quos culpa aliquid dignissimos neque officia quasi, id perferendis accusamus aliquam nesciunt temporibus mollitia ipsum.</p>
+                     <button class="btn btn-danger">Xem chi tiết</button>
+                </div>
+           </div><br>
+           <div class="row">
+                <div class="col-6">
+                     <p >Đăng ký nhận thông tin từ chúng tôi</p><br>
+                     <form action="" method="post">
+                          <input   class="email shadow" height="40px" width="380px" type="email" name="" id="" placeholder="email...">
+                          <input class="input-submit" type="submit" value="Đăng ký">
+                     </form>
+                </div>
+           </div>
+      </div>
+ </div>
+</div>

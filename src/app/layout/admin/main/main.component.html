@@ -27,10 +27,13 @@
          <td><img width="100px" [src]="p.avatar" alt=""></td>
          <td>{{p.name}}</td>
          <td>{{p.price}}</td>
-         <td>{{p.status}}</td>
-         <td><button class="btn btn-danger">Xóa</button></td>
+         <td> 
+          <app-status [status]="p.status"
+          (changeStatus)="parentChangeStatus($event, p.id)"></app-status>
+       </td>
+         <td><button class="btn btn-danger"   (click)="delete(p.id)" (click)="ConfirmDelete()">Xóa</button></td>
          <td><button class="btn btn-warning">
-           <a style="text-decoration: none; color: #000; font-weight: 600;" routerLink="edit">Chỉnh</a>
+           <a [routerLink]="[ p.id  , 'edit']" style="text-decoration: none; color: #000; font-weight: 600;" >Chỉnh sửa</a>
           </button></td>
        </tr>
        
